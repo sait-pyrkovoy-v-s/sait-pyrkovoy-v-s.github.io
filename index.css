@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700,300&subset=latin,cyrillic);
+
+body {
+    background: url(images/background.jpg) fixed;
+    padding-top: 10px;
+    background-repeat: round;
+}
+
+#name {
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    color: black;
+    font-size: 30px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    color: black;
+}
+
+#vse {
+    background: url(images/background-vazhnoe.jpg) fixed;
+    background-repeat: round;
+    padding: 15px;
+}
+
+#vse1 {
+    background: url(images/background-vazhnoe.jpg) fixed;
+    background-repeat: round;
+}
+
+/* Меню */
+
+#open-menu {
+    text-align: center;
+    font-size: 30px;
+    color: #333333;
+}
+    
+.navbar-nav > li {
+    text-align: center;
+} 
+
+/* Цвет фона и рамки навигационного меню */
+.navbar-inverse {
+    background: linear-gradient(to top, black, #333333);
+    border-color: #333333;
+    margin: 0px;
+}
+
+/* Текст пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: white;
+    text-decoration-style: solid;
+    text-decoration: underline;
+    text-decoration-color: white;
+    background-color: black;
+    transition: all 0.5s ease-out;
+}
+/* Цвет и фон активного пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-inverse .navbar-nav > .active, 
+.navbar-inverse .navbar-nav > .active:hover, 
+.navbar-inverse .navbar-nav > .active:focus {
+    color: white;
+    background-color: black;
+}
+
+/* Цвет и фон открытого пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-inverse .navbar-nav > .open, 
+.navbar-inverse .navbar-nav > .open:hover, 
+.navbar-inverse .navbar-nav > .open:focus {
+    color: white;
+    background-color: black;
+}
+
+hr {
+    border-color: black;
+}
+
+h4 {
+    text-decoration: underline;
+    color: black;
+}
+
+div.modal {
+    text-align: center;
+}
+
+#tecuchs_predmety {
+    border-color: #FFBF40;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px; 
+    margin: 10px;
+    padding: 0px;
+}
+
+#tecuchs_predmety > ul {
+    margin: 0px;
+}
+
+#tecuchs_predmety > ul > li > a {
+    color: blueviolet;
+    text-align: center;
+}
+
+#tecuchs_predmety > ul > li > p {
+    color: black;
+    text-align: center;
+}
+
+#tecuchs_predmety_p {
+    background: #FFBF40;
+    font-size: 16px;
+    margin: 0px;
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+
+/* Для col-lg */
+
+@media (min-width: 1200px) {
+    
+    /* Меню */
+    
+/* Пункт навигационного меню */
+.navbar-inverse .navbar-nav > li > a {
+    border-color: #333333;
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    width: 130px;
+    height: 90px;
+    display: table-cell;
+    vertical-align: middle;
+}
+    
+#responsive-menu,
+#container-menu {
+    padding: 0px;
+    min-width: 1170px;
+    min-height 70px;
+}
+
+li.nav {
+    width: 130px;
+    height: 90px;
+}
+    }
+ 
+/* Для col-md */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+    /* Меню */
+
+/* Пункт навигационного меню */
+.navbar-inverse .navbar-nav > li > a {
+    width: 107px;
+    height: 100px;
+    display: table-cell;
+    vertical-align: middle;
+}
+    
+#responsive-menu,
+#container-menu {
+    padding: 0px;
+    min-width: 193px;
+    min-height 70px;
+}
+
+li.nav {
+    width: 107px;
+    height: 100px;
+}
+    }
+
+/* Для col-sm */
+
+@media (max-width: 991px) and (min-width: 768px) {
+    
+    /* Меню */
+ 
+/* Пункт навигационного меню */
+.navbar-inverse .navbar-nav > li > a {
+    width: 83px;
+    height: 110px;
+    display: table-cell;
+    vertical-align: middle;
+}
+    
+#responsive-menu,
+#container-menu {
+    padding: 0px;
+    min-width: 748px;
+    min-height 109px;
+}
+
+li.nav {
+    width: 83px;
+    height: 110px;
+}
+    }
